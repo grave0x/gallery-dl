@@ -144,6 +144,7 @@ CATEGORY_MAP = {
     "mediawiki"      : "MediaWiki",
     "micmicidol"     : "MIC MIC IDOL",
     "mixdrop"        : "MixDrop",
+    "myhentaicomics" : "My Hentai Comics",
     "myhentaigallery": "My Hentai Gallery",
     "myportfolio"    : "Adobe Portfolio",
     "natomanga"      : "MangaNato",
