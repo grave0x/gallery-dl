@@ -763,6 +763,12 @@ Consider all listed sites to potentially be NSFW.
     <td>Galleries, Groups, Media Files</td>
     <td></td>
 </tr>
+<tr id="myhentaicomics" title="myhentaicomics">
+    <td>My Hentai Comics</td>
+    <td>https://myhentaicomics.com/</td>
+    <td>Galleries, Tag Searches</td>
+    <td></td>
+</tr>
 <tr id="myhentaigallery" title="myhentaigallery">
     <td>My Hentai Gallery</td>
     <td>https://myhentaigallery.com/</td>
