@@ -1,5 +1,44 @@
 # Changelog
 
+## 1.32.4 - 2026-06-22
+### Extractors
+- **Additions**
+  - [pawchive] add support ([`cb#179`](https://codeberg.org/mikf/gallery-dl/issues/179) [`gh#9590`](https://github.com/mikf/gallery-dl/issues/9590))
+- **Removals**
+  - [cfake] remove module
+- **aryion**
+  - extract `title` without HTML entities ([`cb#183`](https://codeberg.org/mikf/gallery-dl/issues/183))
+  - fix metadata extraction ([`cb#193`](https://codeberg.org/mikf/gallery-dl/issues/193))
+- **bilibili**
+  - update `modules` extraction ([`gh#9596`](https://github.com/mikf/gallery-dl/issues/9596))
+- **civitai**
+  - fix file URLs
+- **comicartfans**
+  - bypass CF and fix 403 error for downloads
+- **facebook**
+  - fix crash on `title` values with double quotes ([`cb#198`](https://codeberg.org/mikf/gallery-dl/issues/198))
+- **fanbox**
+  - add `fee-min` option
+- **furaffinity**
+  - fix crash on `Image Not Found` posts ([`cb#195`](https://codeberg.org/mikf/gallery-dl/issues/195))
+- **hypnohub**
+  - use workaround for `Access Restricted` images ([`gh#9586`](https://github.com/mikf/gallery-dl/issues/9586))
+- **kemono**
+  - fix username & password login
+- **motherless**
+  - update domain to `motherless.xxx` ([`gh#9601`](https://github.com/mikf/gallery-dl/issues/9601))
+- **pixiv**
+  - restore `background` fallback URLs ([`gh#9587`](https://github.com/mikf/gallery-dl/issues/9587))
+- **shimmie2**
+  - generalize file URL extraction ([`cb#182`](https://codeberg.org/mikf/gallery-dl/issues/182))
+- **weibo**
+  - improve `retweet` extraction ([`cb#87`](https://codeberg.org/mikf/gallery-dl/issues/87) [`cb#191`](https://codeberg.org/mikf/gallery-dl/issues/191))
+- **xasiat**
+  - fix `filename` metadata ([`gh#9589`](https://github.com/mikf/gallery-dl/issues/9589))
+### Utilities
+- **util**
+  - implement and use `b64…` functions
+s
 ## 1.32.3 - 2026-06-13
 ### Extractors
 - **bluesky**
