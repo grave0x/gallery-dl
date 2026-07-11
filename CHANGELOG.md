@@ -1,5 +1,44 @@
 # Changelog
 
+## 1.32.6 - 2026-07-11
+### Extractors
+- **Additions**
+  - [artfight] add support ([`gh#9235`](https://github.com/mikf/gallery-dl/issues/9235) [`pr#62`](https://codeberg.org/mikf/gallery-dl/pulls/62))
+  - [cara] add support ([`cb#222`](https://codeberg.org/mikf/gallery-dl/issues/222) [`gh#5799`](https://github.com/mikf/gallery-dl/issues/5799))
+  - [ganknow] add basic support ([`gh#6880`](https://github.com/mikf/gallery-dl/issues/6880) [`pr#190`](https://codeberg.org/mikf/gallery-dl/pulls/190))
+  - [sakuhentai] add support for image galleries ([`pr#224`](https://codeberg.org/mikf/gallery-dl/pulls/224))
+  - [shimmie2] support `prequeladventure.com/fanartbooru` ([`cb#236`](https://codeberg.org/mikf/gallery-dl/issues/236))
+  - [xasiat] add `search` extractor ([`cb#229`](https://codeberg.org/mikf/gallery-dl/issues/229))
+- **Removals**
+  - [shimmie2] remove `soybooru.com`
+- **arena**
+  - fix `403 Forbidden` errors ([`gh#9632`](https://github.com/mikf/gallery-dl/issues/9632))
+- **booru**
+  - add `post-range` skip
+- **bunkr**
+  - accept `cdn.bunkr.ru` URLs ([`cb#234`](https://codeberg.org/mikf/gallery-dl/issues/234))
+- **facebook**
+  - update `/posts/` URL pattern ([`cb#228`](https://codeberg.org/mikf/gallery-dl/issues/228))
+- **hiperdex**
+  - use `tRPC` API ([`cb#241`](https://codeberg.org/mikf/gallery-dl/issues/241))
+  - fix `403 Forbidden` errors ([`cb#241`](https://codeberg.org/mikf/gallery-dl/issues/241))
+- **mangadex**
+  - fix `AttributeError: 'cache'` ([`gh#9642`](https://github.com/mikf/gallery-dl/issues/9642))
+- **pawchive**
+  - update domain to `pawchive.pw`
+  - add `domain` option
+- **sankaku**
+  - fix searches for tags with `+` characters ([`cb#239`](https://codeberg.org/mikf/gallery-dl/issues/239))
+- **shimmie2**
+  - prevent `IndexError` when no width/height is given ([`cb#236`](https://codeberg.org/mikf/gallery-dl/issues/236))
+- **twitter**
+  - support `article` videos ([`gh#8995`](https://github.com/mikf/gallery-dl/issues/8995))
+### Utilities
+- **common**
+  - allow disabling header injection in `request_json()`
+- **requirements**
+  - update package versions
+
 ## 1.32.5 - 2026-06-30
 ### Extractors
 - **Additions**
