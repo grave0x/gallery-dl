@@ -1030,7 +1030,7 @@ Consider all listed sites to potentially be NSFW.
 <tr id="sankaku" title="sankaku">
     <td>Sankaku Channel</td>
     <td>https://sankaku.app/</td>
-    <td>Book Searches, Pools, Posts, Tag Searches</td>
+    <td>Book Searches, Favorites, Pools, Posts, Tag Searches</td>
     <td>Supported</td>
 </tr>
 <tr id="sankakucomplex" title="sankakucomplex">
