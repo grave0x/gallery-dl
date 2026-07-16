@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+### Extractors
+#### Additions
+- [sankaku] add `favorite` extractor (requires login for private favorites)
+
 ## 1.31.10 - 2026-03-19
 ### Extractors
 #### Additions
