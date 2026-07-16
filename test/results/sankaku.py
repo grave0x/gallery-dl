@@ -613,4 +613,18 @@ __tests__ = (
     "#class"   : sankaku.SankakuBooksExtractor,
 },
 
+{
+    "#url"     : "https://sankaku.app/users/USER/favorites",
+    "#category": ("booru", "sankaku", "favorite"),
+    "#class"   : sankaku.SankakuFavoriteExtractor,
+    "#auth"    : True,
+},
+
+{
+    "#url"     : "https://chan.sankakucomplex.com/users/USER/favorites",
+    "#category": ("booru", "sankaku", "favorite"),
+    "#class"   : sankaku.SankakuFavoriteExtractor,
+    "#auth"    : True,
+},
+
 )
