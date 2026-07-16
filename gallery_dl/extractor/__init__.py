@@ -147,6 +147,7 @@ modules = [
     "naverwebtoon",
     "nekohouse",
     "newgrounds",
+    "nhentai",
     "nijie",
     "nitter",
     "nozomi",
