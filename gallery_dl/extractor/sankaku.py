@@ -206,6 +206,27 @@ class SankakuBooksExtractor(SankakuExtractor):
             yield Message.Queue, url, pool
 
 
+class SankakuFavoriteExtractor(SankakuExtractor):
+    """Extractor for a user's favorites on sankaku.app (requires login)"""
+    subcategory = "favorite"
+    directory_fmt = ("{category}", "favorites", "{user}")
+    archive_fmt = "f_{user}_{id}"
+    pattern = BASE_PATTERN + r"/users/([^/?#]+)/favorites"
+    example = "https://sankaku.app/users/USER/favorites"
+
+    def __init__(self, match):
+        SankakuExtractor.__init__(self, match)
+        self.user = text.unquote(match[1])
+        self.tags = f"fav:{self.user}"
+
+    def metadata(self):
+        return {"user": self.user, "search_tags": self.tags}
+
+    def posts(self):
+        # fav:USER tag search requires authentication for full/private results
+        return self.api.posts_keyset({"tags": self.tags})
+
+
 class SankakuAPI():
     """Interface for the sankaku.app API"""
     ROOT = "https://sankakuapi.com"
