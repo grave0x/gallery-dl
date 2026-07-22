@@ -9,14 +9,28 @@ from gallery_dl.extractor import nhentai
 __tests__ = (
 {
     "#url"     : "https://nhentai.net/favorites/",
-    "#category": ("nhentai", "favorite"),
+    "#category": ("", "nhentai", "favorite"),
     "#class"   : nhentai.NhentaiFavoriteExtractor,
     "#auth"    : True,
 },
 
 {
     "#url"     : "https://nhentai.net/favorites/?q=language:english",
-    "#category": ("nhentai", "favorite"),
+    "#category": ("", "nhentai", "favorite"),
+    "#class"   : nhentai.NhentaiFavoriteExtractor,
+    "#auth"    : True,
+},
+
+{
+    "#url"     : "https://nhentai.net/user/favorites",
+    "#category": ("", "nhentai", "favorite"),
+    "#class"   : nhentai.NhentaiFavoriteExtractor,
+    "#auth"    : True,
+},
+
+{
+    "#url"     : "https://nhentai.net/user/favorites/?q=foo+bar",
+    "#category": ("", "nhentai", "favorite"),
     "#class"   : nhentai.NhentaiFavoriteExtractor,
     "#auth"    : True,
 },
