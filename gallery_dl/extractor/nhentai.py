@@ -128,8 +128,9 @@ class NhentaiSearchExtractor(NhentaiExtractor):
 class NhentaiFavoriteExtractor(NhentaiExtractor):
     """Extractor for nhentai favorites (requires login)"""
     subcategory = "favorite"
-    pattern = r"(?:https?://)?nhentai\.net(/favorites/?)(?:\?([^#]+))?"
+    pattern = r"(?:https?://)?nhentai\.net(?:/user)?(/favorites/?)(?:\?([^#]+))?"
     example = "https://nhentai.net/favorites/"
+    # also supports https://nhentai.net/user/favorites (normalized internally)
 
     def _init(self):
         NhentaiExtractor._init(self)
