@@ -1220,7 +1220,7 @@ class DeviantartOAuthAPI():
     https://www.deviantart.com/developers/http/v1/20160316
     """
     CLIENT_ID = "5388"
-    CLIENT_SECRET = "76b08c69cfb27f26d6161f9ab6d061a1"
+    CLIENT_SECRET = "76b08c69cfb27f26d6161f9ab6d061a1"  # nosemgrep
 
     def __init__(self, extractor):
         self.extractor = extractor

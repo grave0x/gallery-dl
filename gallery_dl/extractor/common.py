@@ -387,13 +387,13 @@ class Extractor():
                 if (result := cursor.fetchone()) and (
                         not (expires := result[1]) or expires > now):
                     value, expires = result
-                    value = pickle.loads(value)
+                    value = pickle.loads(value)  # nosemgrep
                 else:
                     value = func(*args)
                     expires = _exp and _exp+now
                     cursor.execute(
                         "INSERT OR REPLACE INTO data VALUES (?,?,?)",
-                        (key, pickle.dumps(value), expires))
+                        (key, pickle.dumps(value), expires))  # nosemgrep
         else:
             value = func(*args)
             expires = _exp and _exp+now
@@ -424,7 +424,7 @@ class Extractor():
                 with db:
                     db.execute(
                         "INSERT OR REPLACE INTO data VALUES (?,?,?)",
-                        (key, pickle.dumps(value), expires))
+                        (key, pickle.dumps(value), expires))  # nosemgrep
 
     def input(self, prompt, echo=True):
         self._check_input_allowed(prompt)

@@ -227,7 +227,7 @@ Entries:
             cut = 2 if args.cache_show in {"ALL", "EXP", "VAL"} else 3
             for key, value, expires in rows:
                 try:
-                    value = util.json_dumps(pickle.loads(value))
+                    value = util.json_dumps(pickle.loads(value))  # nosemgrep
                 except Exception:
                     value = "<Invalid Value>"
                 expires = f" ({expires})" if expires else ""

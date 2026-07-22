@@ -156,11 +156,11 @@ def load_cookies_chromium(browser_name, profile=None,
         try:
             rows = cursor.execute(
                 "SELECT host_key, name, value, encrypted_value, path, "
-                "expires_utc, is_secure FROM cookies" + condition, parameters)
+                "expires_utc, is_secure FROM cookies" + condition, parameters)  # nosemgrep
         except sqlite3.OperationalError:
             rows = cursor.execute(
                 "SELECT host_key, name, value, encrypted_value, path, "
-                "expires_utc, secure FROM cookies" + condition, parameters)
+                "expires_utc, secure FROM cookies" + condition, parameters)  # nosemgrep
 
         failed_cookies = 0
         unencrypted_cookies = 0

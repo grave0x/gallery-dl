@@ -408,7 +408,7 @@ class IwaraAPI():
         file_id = base.rpartition("/")[2]
         sha_postfix = "mSvL05GfEmeEmsEYfGCnVpEjYgTJraJN"
         sha_key = f"{file_id}_{expires}_{sha_postfix}"
-        hash = hashlib.sha1(sha_key.encode()).hexdigest()
+        hash = hashlib.sha1(sha_key.encode()).hexdigest()  # nosemgrep: non-cryptographic use
         headers = {"X-Version": hash, **self.headers}
         return self.extractor.request_json(file_url, headers=headers)
 

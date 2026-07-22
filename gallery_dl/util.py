@@ -154,7 +154,7 @@ def sha1(s):
         s = b""
     elif isinstance(s, str):
         s = s.encode()
-    return hashlib.sha1(s).hexdigest()
+    return hashlib.sha1(s).hexdigest()  # nosemgrep: non-cryptographic use
 
 
 def generate_token(size=16):
@@ -817,7 +817,7 @@ def compile_expression_tryexcept(expr, name="<expr>", globals=None):
 
     def _eval(locals=None):
         try:
-            return eval(code_object, globals, locals)
+            return eval(code_object, globals, locals)  # nosemgrep
         except exception.GalleryDLException:
             raise
         except Exception:

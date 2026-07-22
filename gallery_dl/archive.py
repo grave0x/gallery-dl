@@ -78,6 +78,8 @@ class DownloadArchive():
 
         if pragma:
             for stmt in pragma:
+                if not all(c.isalnum() or c in "._=,- " for c in stmt):
+                    raise ValueError(f"unsafe PRAGMA statement: {stmt!r}")
                 cursor.execute(f"PRAGMA {stmt}")
 
         try:

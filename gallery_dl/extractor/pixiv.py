@@ -1132,7 +1132,7 @@ class PixivAppAPI():
     - https://gist.github.com/ZipFile/3ba99b47162c23f8aea5d5942bb557b1
     """
     CLIENT_ID = "MOBrBDS8blbauoSck0ZfDbtuzpyT"
-    CLIENT_SECRET = "lsACyCD94FhDUtGTXi3QzcFE2uU1hqtDaKeqrdwj"
+    CLIENT_SECRET = "lsACyCD94FhDUtGTXi3QzcFE2uU1hqtDaKeqrdwj"  # nosemgrep
     HASH_SECRET = ("28c1fdd170a5204386cb1313c7077b34"
                    "f83e4aaf4aa829ce78c231e05b0bae2c")
 

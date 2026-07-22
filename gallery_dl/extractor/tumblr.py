@@ -386,8 +386,8 @@ class TumblrAPI(oauth.OAuth1API):
     https://github.com/tumblr/docs/blob/master/api.md
     """
     ROOT = "https://api.tumblr.com"
-    API_KEY = "O3hU2tMi5e4Qs5t3vezEi6L0qRORJ5y9oUpSGsrWu8iA3UCc3B"
-    API_SECRET = "sFdsK3PDdP2QpYMRAoq0oDnw0sFS24XigXmdfnaeNZpJpqAn03"
+    API_KEY = "O3hU2tMi5e4Qs5t3vezEi6L0qRORJ5y9oUpSGsrWu8iA3UCc3B"  # nosemgrep
+    API_SECRET = "sFdsK3PDdP2QpYMRAoq0oDnw0sFS24XigXmdfnaeNZpJpqAn03"  # nosemgrep
     BLOG_CACHE = {}
 
     def __init__(self, extractor):

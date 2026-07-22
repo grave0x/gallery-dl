@@ -228,9 +228,11 @@ def _init_jinja():
 
     if opts := config.get((), "jinja"):
         JinjaFormatter.env = env = jinja2.Environment(
+            autoescape=jinja2.select_autoescape(["html", "xml"]),
             **opts.get("environment") or {})
     else:
-        JinjaFormatter.env = jinja2.Environment()
+        JinjaFormatter.env = jinja2.Environment(
+            autoescape=jinja2.select_autoescape(["html", "xml"]))
         return
 
     if policies := opts.get("policies"):
