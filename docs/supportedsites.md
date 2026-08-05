@@ -751,12 +751,6 @@ Consider all listed sites to potentially be NSFW.
     <td>Art, Audio, Favorites, Followed Users, Games, individual Images, Media Files, Movies, Search Results, User Profiles</td>
     <td>Supported</td>
 </tr>
-<tr id="nhentai" title="nhentai">
-    <td>nhentai</td>
-    <td>https://nhentai.net/</td>
-    <td>Favorites, Galleries, Search Results, Tag Searches</td>
-    <td></td>
-</tr>
 <tr id="seiga" title="seiga">
     <td>Niconico Seiga</td>
     <td>https://seiga.nicovideo.jp/</td>

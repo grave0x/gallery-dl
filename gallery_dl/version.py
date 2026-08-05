@@ -6,5 +6,9 @@
 # it under the terms of the GNU General Public License version 2 as
 # published by the Free Software Foundation.
 
+<<<<<<< HEAD
 __version__ = "1.32.6"
+=======
+__version__ = "1.32.9"
+>>>>>>> upstream/master
 __variant__ = None
